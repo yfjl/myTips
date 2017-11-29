@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>myTips.js</title>
+   
+        <style type="text/css">
+            #news{
+                width: 100px;
+                height: 100px;
+                background: red;
+                margin: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        
+        <div id="news"></div>
+
+        <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="myTips.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript">
+            var arr =['<div>',
+                '<h1>hello,world!</h1>',
+                '<h2>hello,world!</h2>',
+                '<h3>hello,world!</h3>',
+                '<h4>hello,world!</h4>',
+                '<h5>hello,world!</h5>',
+                '<h6>hello,world!</h6>',
+            '</div>'].join(" ")
+
+                $("#news").myTip({
+                    content:arr
+                })
+          
+        </script>
+
+    </body>
+
+</html>
